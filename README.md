@@ -50,7 +50,8 @@
 
 ## 가이드 라인
 
-- Google Cloud Platform 가입 및 Google Speech API가 필요합니다.
+- Google SDK를 local에 다운로드 받아야합니다. 
+- Google Cloud Platform 가입 및 Google Speech-to-Text API/ Text-to-speech API 활성화가 필요합니다.
 
 ```
 
@@ -82,9 +83,9 @@ $ python(3) ./pokachip.py
 
    (ex) 맘스터치에서 싸이버거 한개 주문해줘)
 
-   **녹음이 시작되면 빨간색으로 바뀌고 진행되는 동안 유지됩니다.**
+   녹음이 시작되면 레코딩 바가 **빨간색**으로 바뀌고 진행되는 동안 유지됩니다.
 
-5. 녹음이 끝나고 초록색으로 바뀌면 주문한 메뉴를 확인합니다.
+5. 녹음이 끝나고 레코딩 바가 **초록색**으로 바뀌면 주문한 메뉴를 확인합니다.
 
 6. 만약, 주문하고자 하는 내용과 다르다면 **재입력**을 눌러 다시 녹음합니다.
 
@@ -103,6 +104,10 @@ $ python(3) ./pokachip.py
 #### selenum.py
 
 요기요에서 selenium을 통해 pokachip.py에서 받은 주문 실행
+
+#### order.py
+
+텍스트로 변환된 구문에 대한 분석, 조건에 따른 처리방식 명시
 
 #### textbrowserTest.ui
 
